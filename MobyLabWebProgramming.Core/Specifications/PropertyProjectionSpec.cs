@@ -16,7 +16,9 @@ public sealed class PropertyProjectionSpec : BaseSpec<PropertyProjectionSpec, Pr
     protected override Expression<Func<Property, PropertyDTO>> Spec => e => new()
     {
         Id = e.Id,
-        Title = e.Title
+        Title = e.Title,
+        Description = e.Description,
+        Address = e.Address
     };
 
     public PropertyProjectionSpec(bool orderByCreatedAt = true) : base(orderByCreatedAt)

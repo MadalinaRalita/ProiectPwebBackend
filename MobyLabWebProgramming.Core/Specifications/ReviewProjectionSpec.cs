@@ -16,7 +16,9 @@ public sealed class ReviewProjectionSpec : BaseSpec<ReviewProjectionSpec, Review
     protected override Expression<Func<Review, ReviewDTO>> Spec => e => new()
     {
         Id = e.Id,
-        Title = e.Title
+        Title = e.Title,
+        Description = e.Description,
+        Rating = e.Rating
     };
 
     public ReviewProjectionSpec(bool orderByCreatedAt = true) : base(orderByCreatedAt)

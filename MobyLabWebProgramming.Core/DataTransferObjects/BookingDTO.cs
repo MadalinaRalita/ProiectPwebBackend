@@ -11,4 +11,6 @@ public class BookingDTO
     public Guid Id { get; set; }
     public string CheckInDate { get; set; } = default!;
     public string CheckOutDate { get; set; } = default!;
+
+    //public Guid PropertyId { get; set; }
 }

@@ -60,6 +60,7 @@ public class BookingService : IBookingService
             CheckInDate = booking.CheckInDate,
             CheckOutDate = booking.CheckOutDate,
             UserId = requestingUser.Id
+            //PropertyId = booking.PropertyId
         }, cancellationToken); // A new entity is created and persisted in the database.
 
         return ServiceResponse.ForSuccess();
